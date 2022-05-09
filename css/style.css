@@ -1,0 +1,175 @@
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+  color: #000;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+.header {
+  text-align: center;
+  padding: 20px;
+}
+
+.sample__title {
+  margin: 0 auto 40px;
+  text-align: center;
+  display: block;
+  width: 80px;
+  background-color: wheat;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#first.first {
+  padding: 100px 0 100px 0;
+  margin: 0 auto;
+}
+#first.first .menu {
+  max-width: 600px;
+  margin: 0 auto;
+}
+#first.first .menu__list {
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  background-color: greenyellow;
+}
+#first.first .menu__list--bubble {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 0px solid yellowgreen;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-color: green;
+  transition: 2s ease-in;
+  font-size: 20px;
+}
+#first.first .menu__list .menu__list--item {
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  position: relative;
+}
+#first.first .menu__list .menu__list--link {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: 2s ease-in;
+}
+#first.first .menu__list .menu__list--link:hover {
+  width: calc(100% + 30px);
+  height: 200%;
+  transform: translate(-15px, -45%);
+  transition: 0.5s ease-out;
+}
+#first.first .menu__list .menu__list--link:hover + .menu__list--bubble {
+  transform: translate(-20px, -60%);
+  transition: 0.5s ease-out;
+  border: 5px solid white;
+  font-size: 30px;
+  width: 110px;
+  height: 110px;
+  box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.3);
+}
+
+/*# sourceMappingURL=style.css.map */
